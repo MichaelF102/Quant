@@ -1,47 +1,53 @@
 import streamlit as st
 import yfinance as yf
-import numpy as np
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 
 # ---------------------------
-# Page Config
+# Config
 # ---------------------------
-st.set_page_config(
-    page_title="Fractal & Multifractal Market Analysis",
-    layout="wide"
+st.set_page_config(page_title="Market Fractal Analyzer", layout="wide")
+
+CSV_PATH = "/mnt/data/Market_data.csv"
+
+# ---------------------------
+# Load Symbol Master
+# ---------------------------
+@st.cache_data
+def load_symbol_master():
+    df = pd.read_csv(CSV_PATH)
+    df.columns = [c.strip() for c in df.columns]
+    return df
+
+symbols_df = load_symbol_master()
+
+# ---------------------------
+# Sidebar Inputs
+# ---------------------------
+st.sidebar.header("🔎 Instrument Selection")
+
+exchange = st.sidebar.selectbox(
+    "Select Exchange",
+    sorted(symbols_df["Exchange"].unique())
 )
 
-st.title("📈 Fractal & Multifractal Analysis of Financial Markets")
-st.markdown(
-    """
-    **Fractals reveal long memory.  
-    Multifractals reveal market complexity.**
-
-    This app analyzes real financial data using:
-    - Hurst Exponent
-    - Rolling Fractal Regimes
-    - Multifractal Detrended Fluctuation Analysis (MF-DFA)
-    """
+company_input = st.sidebar.text_input(
+    "Type Company Name",
+    placeholder="e.g. Apple, Reliance, Tesla"
 )
 
-# ---------------------------
-# Sidebar Controls
-# ---------------------------
-st.sidebar.header("⚙️ Configuration")
+start_date = st.sidebar.date_input("Start Date", pd.to_datetime("2010-01-01"))
+end_date = st.sidebar.date_input("End Date", pd.to_datetime("2024-01-01"))
 
-ticker = st.sidebar.text_input("Ticker", "AAPL")
-start = st.sidebar.date_input("Start Date", pd.to_datetime("2010-01-01"))
-end = st.sidebar.date_input("End Date", pd.to_datetime("2024-01-01"))
+rolling_window = st.sidebar.slider("Rolling Hurst Window", 100, 500, 252)
+max_scale = st.sidebar.slider("MF-DFA Max Scale", 100, 500, 250)
 
-window = st.sidebar.slider("Rolling Hurst Window", 100, 500, 252)
-max_scale = st.sidebar.slider("Max MF-DFA Scale", 100, 500, 250)
-
-run = st.sidebar.button("▶ Run Analysis")
+run_button = st.sidebar.button("▶ Run Analysis")
 
 # ---------------------------
-# Utility Functions
+# Helper Functions
 # ---------------------------
 def hurst(ts):
     lags = range(2, 100)
@@ -61,31 +67,59 @@ def mfdfa(signal, scales, q_vals):
         rms = []
 
         for j in range(segments):
-            segment = profile[j*scale:(j+1)*scale]
+            seg = profile[j*scale:(j+1)*scale]
             x = np.arange(scale)
-            coeffs = np.polyfit(x, segment, 1)
-            trend = np.polyval(coeffs, x)
-            rms.append(np.sqrt(np.mean((segment - trend)**2)))
+            trend = np.polyval(np.polyfit(x, seg, 1), x)
+            rms.append(np.sqrt(np.mean((seg - trend)**2)))
 
         rms = np.array(rms)
 
-        for q_i, q in enumerate(q_vals):
+        for qi, q in enumerate(q_vals):
             if q == 0:
-                Fq[q_i, i] = np.exp(0.5 * np.mean(np.log(rms**2)))
+                Fq[qi, i] = np.exp(0.5 * np.mean(np.log(rms**2)))
             else:
-                Fq[q_i, i] = (np.mean(rms**q))**(1/q)
+                Fq[qi, i] = (np.mean(rms**q))**(1/q)
 
     return Fq
 
 # ---------------------------
-# Main Logic
+# Resolve Company → Ticker
 # ---------------------------
-if run:
-    st.subheader("📥 Downloading Data")
-    data = yf.download(ticker, start=start, end=end)
+if company_input:
+    filtered = symbols_df[
+        (symbols_df["Exchange"] == exchange) &
+        (symbols_df["Name"].str.contains(company_input, case=False, na=False))
+    ]
+
+    if not filtered.empty:
+        selected_row = st.sidebar.selectbox(
+            "Matching Companies",
+            filtered.itertuples(),
+            format_func=lambda x: f"{x.Name} ({x.Ticker})"
+        )
+        selected_ticker = selected_row.Ticker
+    else:
+        selected_ticker = None
+else:
+    selected_ticker = None
+
+# ---------------------------
+# Main Analysis
+# ---------------------------
+st.title("📈 Fractal & Multifractal Market Analysis")
+
+if run_button:
+
+    if not selected_ticker:
+        st.error("❌ No matching company found. Please refine your search.")
+        st.stop()
+
+    st.success(f"✅ Selected Ticker: {selected_ticker}")
+
+    data = yf.download(selected_ticker, start=start_date, end=end_date)
 
     if data.empty:
-        st.error("No data found. Check ticker or date range.")
+        st.error("No data returned from Yahoo Finance.")
         st.stop()
 
     prices = data["Adj Close"].dropna()
@@ -93,43 +127,31 @@ if run:
 
     col1, col2 = st.columns(2)
 
-    # ---------------------------
-    # Price Plot
-    # ---------------------------
+    # Price
     with col1:
-        st.markdown("### 💲 Price Series")
         fig, ax = plt.subplots()
         ax.plot(prices)
         ax.set_title("Adjusted Close Price")
         st.pyplot(fig)
 
-    # ---------------------------
-    # Returns Plot
-    # ---------------------------
+    # Returns
     with col2:
-        st.markdown("### 🔄 Log Returns")
         fig, ax = plt.subplots()
         ax.plot(returns)
         ax.set_title("Log Returns")
         st.pyplot(fig)
 
-    # ---------------------------
-    # Distribution
-    # ---------------------------
-    st.markdown("### 📊 Return Distribution")
+    # QQ Plot
     fig, ax = plt.subplots()
     stats.probplot(returns, dist="norm", plot=ax)
+    ax.set_title("Return Distribution (QQ Plot)")
     st.pyplot(fig)
 
-    # ---------------------------
-    # Hurst Exponent
-    # ---------------------------
-    st.markdown("## 📐 Fractal Analysis")
-
+    # Hurst
     H = hurst(returns.values)
     st.metric("Global Hurst Exponent", round(H, 3))
 
-    rolling_H = returns.rolling(window).apply(
+    rolling_H = returns.rolling(rolling_window).apply(
         lambda x: hurst(x.values), raw=False
     )
 
@@ -139,53 +161,26 @@ if run:
     ax.set_title("Rolling Hurst Exponent")
     st.pyplot(fig)
 
-    # ---------------------------
     # MF-DFA
-    # ---------------------------
-    st.markdown("## 🌈 Multifractal Analysis (MF-DFA)")
-
     scales = np.arange(10, max_scale, 10)
     q_vals = np.arange(-5, 6)
 
     Fq = mfdfa(returns.values, scales, q_vals)
-
-    Hq = []
-    for i in range(len(q_vals)):
-        coeffs = np.polyfit(np.log(scales), np.log(Fq[i]), 1)
-        Hq.append(coeffs[0])
-
-    Hq = np.array(Hq)
+    Hq = [np.polyfit(np.log(scales), np.log(Fq[i]), 1)[0] for i in range(len(q_vals))]
 
     fig, ax = plt.subplots()
     ax.plot(q_vals, Hq, marker="o")
-    ax.set_xlabel("q")
-    ax.set_ylabel("H(q)")
-    ax.set_title("Generalized Hurst Exponents")
+    ax.set_title("Generalized Hurst Exponents H(q)")
     st.pyplot(fig)
 
-    # ---------------------------
-    # Multifractal Spectrum
-    # ---------------------------
-    tau_q = q_vals * Hq - 1
+    # Spectrum
+    tau_q = q_vals * np.array(Hq) - 1
     alpha = np.gradient(tau_q, q_vals)
     f_alpha = q_vals * alpha - tau_q
 
     fig, ax = plt.subplots()
     ax.plot(alpha, f_alpha, marker="o")
-    ax.set_xlabel("α")
-    ax.set_ylabel("f(α)")
     ax.set_title("Multifractal Spectrum")
     st.pyplot(fig)
 
-    st.success("✅ Analysis Complete")
-
-# ---------------------------
-# Footer
-# ---------------------------
-st.markdown("---")
-st.markdown(
-    """
-    **Built for Quant Research & Market Microstructure Analysis**  
-    Fractal • Multifractal • Regime Detection
-    """
-)
+    st.success("🎯 Analysis Complete")
