@@ -10,7 +10,7 @@ from scipy import stats
 # ---------------------------
 st.set_page_config(page_title="Market Fractal Analyzer", layout="wide")
 
-CSV_PATH = "/mnt/data/Market_data.csv"
+CSV_PATH = "/data/Market_data.csv"
 
 # ---------------------------
 # Load Symbol Master
@@ -184,3 +184,4 @@ if run_button:
     st.pyplot(fig)
 
     st.success("🎯 Analysis Complete")
+
