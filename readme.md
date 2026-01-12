@@ -8,241 +8,241 @@ This project serves as a research lab for developing, testing, and documenting q
 <details> <summary><strong> 1. Mathematical Foundations (Absolute Core)</strong></summary>
 
 
-Probability Theory
+i. Probability Theory
 
-Mathematical Statistics
+ii. Mathematical Statistics
 
-Linear Algebra
+iii. Linear Algebra
 
-Multivariate Calculus
+iv. Multivariate Calculus
 
-Stochastic Processes
+v. Stochastic Processes
 
-Stochastic Calculus
+vi. Stochastic Calculus
 
-Ito’s Lemma
+vii. Ito’s Lemma
 
-Stochastic Differential Equations (SDEs)
+viii. Stochastic Differential Equations (SDEs)
 
-Girsanov Theorem
+ix. Girsanov Theorem
 
 </details>
 <details> <summary><strong> 2. Derivatives & Pricing Theory</strong></summary>
 
-Derivative Instruments
+i. Derivative Instruments
 
-Forwards
+ii. Forwards
 
-Futures
+iii. Futures
 
-Swaps
+iv. Swaps
 
-Risk-Neutral Valuation
+v. Risk-Neutral Valuation
 
-No-Arbitrage Principle
+vi. No-Arbitrage Principle
 
-Fundamental Theorems of Asset Pricing
+vii. Fundamental Theorems of Asset Pricing
 
-Arbitrage Pricing Theory (APT)
+viii. Arbitrage Pricing Theory (APT)
 
-Option Pricing Models
+ix. Option Pricing Models
 
-Black–Scholes–Merton
+x. Black–Scholes–Merton
 
-Binomial / Trinomial Trees
+xi. Binomial / Trinomial Trees
 
-Local Volatility Models
+xii. Local Volatility Models
 
-Stochastic Volatility Models
+xiii. Stochastic Volatility Models
 
-Jump-Diffusion Models
+xiv. Jump-Diffusion Models
 
-Exotic Options
+xv. Exotic Options
 
-Barrier
+xvi. Barrier
 
-Asian
+xvii. Asian
 
-Lookback
+xviii. Lookback
 
-Digital
+xix. Digital
 
 </details>
 <details> <summary><strong> 3. Greeks & Hedging</strong></summary>
 
-First-Order Greeks
+i. First-Order Greeks
 
-Delta
+ii. Delta
 
-Vega
+iii. Vega
 
-Second-Order Greeks
+iv. Second-Order Greeks
 
-Gamma
+v. Gamma
 
-Vanna
+vi. Vanna
 
-Volga
+vii. Volga
 
-Theta & Rho
+viii. Theta & Rho
 
-Dynamic Hedging
+ix. Dynamic Hedging
 
-Hedging Errors
+x. Hedging Errors
 
-Transaction Costs
+xi. Transaction Costs
 
 </details>
 <details> <summary><strong> 4. Fixed Income & Interest Rate Modeling</strong></summary>
 
-Fixed Income Products
+i. Fixed Income Products
 
-Bonds
+ii. Bonds
 
-Swaps
+iii. Swaps
 
-Floating Rate Notes (FRNs)
+iv. Floating Rate Notes (FRNs)
 
-Yield Curves & Bootstrapping
+v. Yield Curves & Bootstrapping
 
-Duration & Convexity
+vi. Duration & Convexity
 
-Interest Rate Models
+vii. Interest Rate Models
 
-Vasicek
+viii. Vasicek
 
-Cox–Ingersoll–Ross (CIR)
+ix. Cox–Ingersoll–Ross (CIR)
 
-Hull–White
+x. Hull–White
 
-Heath–Jarrow–Morton (HJM)
+xi. Heath–Jarrow–Morton (HJM)
 
-Credit Spread Modeling
+xii. Credit Spread Modeling
 
 </details>
 <details> <summary><strong> 5. Volatility & Risk Modeling</strong></summary>
 
-Implied vs Realized Volatility
+i. Implied vs Realized Volatility
 
-Volatility Smile & Surface
+ii. Volatility Smile & Surface
 
-GARCH Family Models
+iii. GARCH Family Models
 
-Stress Testing
+iv. Stress Testing
 
-Scenario Analysis
+v. Scenario Analysis
 
-Model Risk
+vi. Model Risk
 
 </details>
 <details> <summary><strong> 6. Numerical Methods (Quant Dev Favorite)</strong></summary>
 
-Monte Carlo Simulation
+i. Monte Carlo Simulation
 
-Finite Difference Methods (PDEs)
+ii. Finite Difference Methods (PDEs)
 
-Numerical Optimization
+iii. Numerical Optimization
 
-Root-Finding Algorithms
+iv. Root-Finding Algorithms
 
-Variance Reduction Techniques
+v. Variance Reduction Techniques
 
 </details>
 <details> <summary><strong> 7. Econometrics & Time Series</strong></summary>
 
-Regression Models
+i. Regression Models
 
-AR / MA / ARIMA
+ii. AR / MA / ARIMA
 
-Stationarity & Cointegration
+iii. Stationarity & Cointegration
 
-Kalman Filters
+iv. Kalman Filters
 
-State-Space Models
+v. State-Space Models
 
 </details>
 <details> <summary><strong> 8. Machine Learning & Data Science</strong></summary>
 
-Feature Engineering for Financial Data
+i. Feature Engineering for Financial Data
 
-Supervised Learning
+ii. Supervised Learning
 
-Unsupervised Learning
+iii. Unsupervised Learning
 
-Tree-Based Models
+iv. Tree-Based Models
 
-Random Forest
+v. Random Forest
 
-XGBoost
+vi. XGBoost
 
-Neural Networks & Deep Learning
+vii. Neural Networks & Deep Learning
 
-Overfitting & Bias–Variance Tradeoff
+viii. Overfitting & Bias–Variance Tradeoff
 
-Model Validation
+ix. Model Validation
 
-Backtesting
+x. Backtesting
 
 </details>
 <details> <summary><strong> 9. Portfolio Theory & Optimization</strong></summary>
 
-Modern Portfolio Theory
+i. Modern Portfolio Theory
 
-Mean–Variance Optimization
+ii. Mean–Variance Optimization
 
-Efficient Frontier
+iii. Efficient Frontier
 
-Factor Models
+iv. Factor Models
 
-Risk Parity
+v. Risk Parity
 
-Transaction Costs
+vi. Transaction Costs
 
-Constraints
+vii. Constraints
 
 </details>
 <details> <summary><strong> 10. Algorithmic & Quant Trading</strong></summary>
 
-Alpha Generation
+i. Alpha Generation
 
-Strategy Design
+ii. Strategy Design
 
-Backtesting Frameworks
+iii. Backtesting Frameworks
 
-Execution Algorithms
+iv. Execution Algorithms
 
-Slippage
+v. Slippage
 
-Latency
+vi. Latency
 
-Market Impact
+vii. Market Impact
 
 </details>
 <details> <summary><strong> 11. Market Microstructure</strong></summary>
 
-Order Types
+i. Order Types
 
-Limit Order Books
+ii. Limit Order Books
 
-Bid–Ask Spread
+iii. Bid–Ask Spread
 
-Liquidity
+iv. Liquidity
 
-Price Impact
+v. Price Impact
 
-Market Making
+vi. Market Making
 
 </details>
 <details> <summary><strong> 12. Credit Risk & Credit Derivatives</strong></summary>
 
-Structural Models
+i. Structural Models
 
-Reduced-Form Models
+ii. Reduced-Form Models
 
-Credit Default Swaps (CDS)
+iii. Credit Default Swaps (CDS)
 
-CVA / DVA / FVA / XVA
+iv. CVA / DVA / FVA / XVA
 
-Counterparty Credit Risk
+v. Counterparty Credit Risk
 
 </details>
