@@ -4,7 +4,175 @@ A professional quantitative finance repository focused on market data analysis, 
 This project serves as a research lab for developing, testing, and documenting quantitative finance concepts using real-world market data.
 
 ---
-# ⭐ Most Important Topics for Quant Interviews 
+
+# Quant Roles 
+
+<details>
+<summary><strong>🧮 Quant Analyst</strong></summary>
+
+**Primary Focus**  
+Pricing, valuation, analytics, and desk support.
+
+**Typical Responsibilities**
+- Build and validate pricing models  
+- Analyze derivatives and structured products  
+- Support trading desks with analytics  
+- P&L attribution and risk reporting  
+
+**Key Skills**
+- Probability & statistics  
+- Derivatives & option pricing  
+- Greeks & hedging  
+- Fixed income fundamentals  
+
+**Common Tools**
+- Python  
+- SQL  
+- Excel  
+- QuantLib  
+
+**Interview Focus**
+- Option pricing theory  
+- Greeks interpretation  
+- Risk-neutral valuation  
+- Numerical methods basics  
+
+</details>
+
+<details>
+<summary><strong>📈 Quant Trader</strong></summary>
+
+**Primary Focus**  
+Trading decisions, execution, and short-term performance.
+
+**Typical Responsibilities**
+- Design and execute trading strategies  
+- Manage intraday risk and positions  
+- Optimize execution and reduce slippage  
+- Collaborate with quant researchers and devs  
+
+**Key Skills**
+- Market microstructure  
+- Volatility modeling  
+- Probability & intuition  
+- Risk management  
+
+**Common Tools**
+- Python  
+- Trading platforms  
+- Real-time market data systems  
+
+**Interview Focus**
+- Probability brainteasers  
+- Market behavior & intuition  
+- Volatility & Greeks  
+- Decision-making under uncertainty  
+
+</details>
+<details>
+<summary><strong>🔬 Quant Researcher</strong></summary>
+
+**Primary Focus**  
+Research, alpha discovery, and model development.
+
+**Typical Responsibilities**
+- Develop predictive and statistical models  
+- Research signals, factors, and strategies  
+- Apply ML and econometric techniques  
+- Backtest and validate strategies  
+
+**Key Skills**
+- Statistics & stochastic processes  
+- Machine learning  
+- Time series & econometrics  
+- Optimization  
+
+**Common Tools**
+- Python (NumPy, pandas, ML libraries)  
+- Jupyter Notebook  
+- Research & backtesting platforms  
+
+**Interview Focus**
+- Probability & statistics  
+- Machine learning concepts  
+- Overfitting & validation  
+- Research reasoning and trade-offs  
+
+</details>
+<details>
+<summary><strong>⚙️ Quant Developer</strong></summary>
+
+**Primary Focus**  
+High-performance systems, pricing engines, and infrastructure.
+
+**Typical Responsibilities**
+- Implement pricing and risk models  
+- Optimize performance and latency  
+- Build and maintain trading infrastructure  
+- Translate research models into production  
+
+**Key Skills**
+- C++ / Python  
+- Data structures & algorithms  
+- Numerical methods  
+- Systems & performance optimization  
+
+**Common Tools**
+- C++  
+- Python  
+- Linux / Unix  
+- Git  
+- QuantLib  
+
+**Interview Focus**
+- Coding (C++ / Python)  
+- Numerical stability  
+- Memory management  
+- System design  
+
+</details>
+<details>
+<summary><strong>⚠️ Quant Risk Analyst</strong></summary>
+
+**Primary Focus**  
+Risk measurement, stress testing, and regulatory compliance.
+
+**Typical Responsibilities**
+- Compute market, credit, and liquidity risk  
+- Run stress tests and scenario analysis  
+- Validate models (MRM)  
+- Support regulatory reporting  
+
+**Key Skills**
+- Risk modeling  
+- Statistics & time series  
+- Credit derivatives  
+- Regulatory frameworks  
+
+**Common Tools**
+- Python  
+- SQL  
+- Risk engines  
+- Reporting systems  
+
+**Interview Focus**
+- VaR & Expected Shortfall  
+- Stress testing frameworks  
+- Model risk management  
+- Regulatory concepts  
+
+</details>
+## 🧠 Role Comparison Summary
+
+| Role | Main Strength | Coding Level | Math Level | Trading Exposure |
+|------|---------------|--------------|------------|------------------|
+| Quant Analyst | Pricing & Analytics | Medium | High | Medium |
+| Quant Trader | Execution & Decisions | Medium | Medium | High |
+| Quant Researcher | Alpha & Modeling | High | Very High | Medium |
+| Quant Developer | Systems & Performance | Very High | High | Low–Medium |
+| Quant Risk Analyst | Risk & Regulation | Medium | Medium–High | Low |
+
+# ⭐ Most Important Topics for Quant 
 
 <details> <summary><strong> 1. Mathematics and Statistics</strong></summary>
 
