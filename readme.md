@@ -1,9 +1,10 @@
-📈 Quant Research & Trading Repository
+## 📈 Quant Research & Trading Repository
 
 A professional quantitative finance repository focused on market data analysis, statistical modeling, trading strategies, and risk management.
 This project serves as a research lab for developing, testing, and documenting quantitative finance concepts using real-world market data.
 
-⭐ Most Important Topics for Quant Interviews 
+---
+# ⭐ Most Important Topics for Quant Interviews 
 
 <details> <summary><strong> 1. Mathematics and Statistics</strong></summary>
 
@@ -361,7 +362,8 @@ vi. Regulatory Capital Concepts
 
 </details>
 
-## 💻 Programming Languages,Libraries & Tools Used in Quantitative Finance
+---
+# 💻 Programming Languages,Libraries & Tools Used in Quantitative Finance
 
 <details>
 <summary><strong>🐍 Python Libraries for Quantitative Finance</strong></summary>
@@ -612,3 +614,119 @@ iv. RDMA
 v. FPGA (Advanced Roles)  
 
 </details>
+
+---
+# 📘Top Books For Quant Interview
+
+<details>
+<summary><strong>📘 1. Mathematical Foundations & Probability</strong></summary>
+
+i. **[Introduction to Probability](https://www.amazon.com/Introduction-Probability-Chapman-Statistical-Science/dp/1138369918)** — Blitzstein & Hwang  
+Great first advanced probability text with lots of problems.
+
+ii. **[Probability and Random Processes](https://www.amazon.com/Probability-Random-Processes-Geoffrey-Grimmett/dp/0198572220)** — Grimmett & Stirzaker  
+Classic rigorous probability reference.
+
+iii. **[Stochastic Processes](https://www.amazon.com/Stochastic-Processes-Probability-Statistics/dp/0471120626)** — Sheldon Ross  
+Good introduction to stochastic processes used in quant finance.
+
+iv. **[Stochastic Calculus for Finance I & II](https://www.amazon.com/Stochastic-Calculus-Finance-Steven-Shreve/dp/0387401016)** — Steven Shreve  
+The gold standard for stochastic calculus and pricing theory.
+
+</details>
+<details>
+<summary><strong>💹 2. Derivatives, Pricing & Financial Theory</strong></summary>
+
+i. **[Options, Futures, and Other Derivatives](https://www.amazon.com/Options-Futures-Other-Derivatives-Global/dp/1292410655)** — John C. Hull  
+De-facto industry standard; excellent for pricing, Greeks, and fixed income basics.
+
+ii. **[Dynamic Hedging](https://www.amazon.com/Dynamic-Hedging-Managing-Vanilla-Options/dp/0471152803)** — Nassim Taleb  
+Practical hedging focus for derivatives traders.
+
+iii. **[The Concepts and Practice of Mathematical Finance](https://www.amazon.com/Concepts-Practice-Mathematical-Finance/dp/0521729756)** — Mark Joshi  
+Excellent bridge between theory and real-world implementation.
+
+iv. **[Financial Calculus](https://www.amazon.com/Financial-Calculus-Introduction-Derivative-Pricing/dp/0521552899)** — Baxter & Rennie  
+Compact, mathematically precise option pricing guide.
+
+</details>
+<details>
+<summary><strong>📉 3. Numerical Methods & Computational Techniques</strong></summary>
+
+i. **[Numerical Methods in Finance and Economics](https://www.amazon.com/Numerical-Methods-Finance-Economics-Statistics/dp/0470746556)** — Paolo Brandimarte  
+Strong mix of finance applications with numerical techniques.
+
+ii. **[Monte Carlo Methods in Financial Engineering](https://www.amazon.com/Monte-Carlo-Methods-Financial-Engineering/dp/0387004513)** — Paul Glasserman  
+Deep dive into Monte Carlo, variance reduction, and simulations.
+
+iii. **[An Introduction to Computational Finance](https://www.amazon.com/Introduction-Computational-Finance-Maciej-Capinski/dp/1852338466)** — Capinski & Zastawniak  
+Clear link between theory and numerical implementation.
+
+</details>
+<details>
+<summary><strong>📊 4. Statistics, Econometrics & Machine Learning</strong></summary>
+
+i. **[Time Series Analysis](https://www.amazon.com/Time-Analysis-James-D-Hamilton/dp/0691042896)** — James D. Hamilton  
+Standard reference for time series and econometrics.
+
+ii. **[The Elements of Statistical Learning](https://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576)** — Hastie, Tibshirani, Friedman  
+Foundational ML theory used across quant workflows.
+
+iii. **[Machine Learning for Asset Managers](https://www.amazon.com/Machine-Learning-Asset-Managers-Elements/dp/1108792898)** — Marcos López de Prado  
+Machine learning applied directly to finance problems.
+
+</details>
+<details>
+<summary><strong>📈 5. Quantitative Trading & Strategy</strong></summary>
+
+i. **[Algorithmic Trading and DMA](https://www.amazon.com/Algorithmic-Trading-DMA-Introduction-Strategies/dp/0956399207)** — Barry Johnson  
+Excellent introduction to modern algo trading mechanics.
+
+ii. **[Advances in Financial Machine Learning](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089)** — Marcos López de Prado  
+Practical ML techniques tailored to financial data.
+
+iii. **[Quantitative Trading](https://www.amazon.com/Quantitative-Trading-Build-Your-Own/dp/0470284883)** — Ernest Chan  
+Good pragmatic introduction to quant trading systems.
+
+</details>
+<details>
+<summary><strong>🐍 6. Python, C++ & Quant Development</strong></summary>
+
+i. **[Python for Finance](https://www.amazon.com/Python-Finance-Analyze-Financial-Data/dp/1492024333)** — Yves Hilpisch  
+Industry-oriented Python for quant research and risk.
+
+ii. **[Effective Modern C++](https://www.amazon.com/Effective-Modern-C-Scott-Meyers/dp/1491903996)** — Scott Meyers  
+Core C++ skills required for real-world quant systems.
+
+iii. **[Design Patterns](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)** — Gamma et al.  
+Essential software engineering fundamentals for large codebases.
+
+</details>
+<details>
+<summary><strong>💼 7. Risk, Portfolio & Advanced Topics</strong></summary>
+
+i. **[Modern Portfolio Theory and Investment Analysis](https://www.amazon.com/Modern-Portfolio-Theory-Investment-Analysis/dp/0470505847)** — Elton, Gruber, Brown, Goetzmann  
+Classic reference on portfolio optimization.
+
+ii. **[Risk and Asset Allocation](https://www.amazon.com/Risk-Asset-Allocation-Attilio-Meucci/dp/3540272535)** — Attilio Meucci  
+Comprehensive treatment of risk management and portfolio construction.
+
+iii. **[Value at Risk](https://www.amazon.com/Value-Risk-Benchmark-Managing-Financial/dp/0071464956)** — Philippe Jorion  
+Standard reference for financial risk management.
+
+</details>
+
+---
+
+| **#** | **Book Title & Author** | **Focus** |
+|------:|-------------------------|-----------|
+| 1 | [Options, Futures, and Other Derivatives – John C. Hull](https://www.amazon.com/Options-Futures-Other-Derivatives-Global/dp/1292410655) | Derivatives & Pricing |
+| 2 | [Stochastic Calculus for Finance I & II – Steven Shreve](https://www.amazon.com/Stochastic-Calculus-Finance-Steven-Shreve/dp/0387401016) | Stochastic Calculus & Pricing Theory |
+| 3 | [Heard on The Street – Timothy Falcon Crack](https://www.amazon.com/Heard-Street-Quantitative-Questions-Interviews/dp/1119146938) | Interview Prep |
+| 4 | [Frequently Asked Questions in Quantitative Finance – Paul Wilmott](https://www.amazon.com/Frequently-Asked-Questions-Quantitative-Finance/dp/0470027074) | Core Quant Concepts |
+| 5 | [A Practical Guide to Quantitative Finance Interviews – Xinfeng Zhou](https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1539338001) | Interview Troubleshooting |
+| 6 | [Quantitative Trading – Ernest P. Chan](https://www.amazon.com/Quantitative-Trading-Build-Your-Own/dp/0470284883) | Trading Strategies |
+| 7 | [Advances in Financial Machine Learning – Marcos López de Prado](https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089) | ML in Finance |
+| 8 | [The Quants – Scott Patterson](https://www.amazon.com/Quants-Breed-Math-Whizzes-Conquered/dp/0307266906) | Quant Industry Insight |
+| 9 | [Inside the Black Box – Rishi K. Narang](https://www.amazon.com/Inside-Black-Box-Quantitative-Trading/dp/1118460146) | Trading System Design |
+| 10 | [The Man Who Solved the Market – Gregory Zuckerman](https://www.amazon.com/Man-Who-Solved-Market-Revolution/dp/1984879077) | Quant Revolution Story |
