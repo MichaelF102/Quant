@@ -5,255 +5,243 @@ This project serves as a research lab for developing, testing, and documenting q
 
 ⭐ Most Important Topics for Quant Interviews 
 
-1️⃣ Probability, Statistics & Stochastic Processes (Core Foundation)
+<details> <summary><strong>🧠 1. Mathematical Foundations (Absolute Core)</strong></summary>
 
-Probability theory (Bayes, conditional expectation)
+Probability Theory
 
-Random variables & distributions
+Mathematical Statistics
 
-Law of Large Numbers, CLT
+Linear Algebra
 
-Hypothesis testing & confidence intervals
+Multivariate Calculus
 
-Time series analysis
+Stochastic Processes
 
-Markov chains & martingales
-
-Brownian motion & Wiener processes
-
-2️⃣ Stochastic Calculus (Very High Priority)
+Stochastic Calculus
 
 Ito’s Lemma
 
-Stochastic differential equations (SDEs)
+Stochastic Differential Equations (SDEs)
 
-Fokker–Planck equations
+Girsanov Theorem
 
-Change of measure (Girsanov theorem)
+</details>
+<details> <summary><strong>💰 2. Derivatives & Pricing Theory</strong></summary>
 
-Martingale pricing framework
+Derivative Instruments
 
-3️⃣ Derivatives & Option Pricing (Absolute Must)
+Forwards
 
-Forward, futures, swaps
+Futures
 
-Vanilla options (European, American)
+Swaps
 
-Exotic options (barrier, Asian, lookback, digital)
+Risk-Neutral Valuation
 
-Path-dependent payoffs
-
-Structured products
-
-Option Pricing Models
-
-Black–Scholes–Merton
-
-Binomial & trinomial trees
-
-Local volatility models
-
-Stochastic volatility models (Heston, SABR)
-
-Jump-diffusion models
-
-Greeks & Sensitivities
-
-Delta, Gamma
-
-Vega, Theta
-
-Rho
-
-Higher-order Greeks
-
-Hedging interpretation of Greeks
-
-4️⃣ Fixed Income & Interest Rate Modeling
-
-Bond pricing & yield curves
-
-Duration, convexity
-
-Term structure of interest rates
-
-Interest rate models:
-
-Vasicek
-
-CIR
-
-Hull–White
-
-Heath–Jarrow–Morton (HJM)
-
-Swaps, caps, floors, swaptions
-
-5️⃣ Risk-Neutral Valuation & No-Arbitrage Theory
-
-Risk-neutral pricing
-
-Change of numéraire
+No-Arbitrage Principle
 
 Fundamental Theorems of Asset Pricing
 
 Arbitrage Pricing Theory (APT)
 
-Replicating portfolios
+Option Pricing Models
 
-6️⃣ Volatility & Risk Modeling
+Black–Scholes–Merton
 
-Implied vs realized volatility
+Binomial / Trinomial Trees
 
-Volatility surfaces & smiles
+Local Volatility Models
 
-GARCH family models
+Stochastic Volatility Models
 
-Volatility forecasting
+Jump-Diffusion Models
 
-Stress testing & scenario analysis
+Exotic Options
 
-7️⃣ Numerical Methods (Critical for Quant Devs)
+Barrier
 
-Monte Carlo simulation
+Asian
 
-Finite difference methods (PDEs)
+Lookback
 
-Numerical integration
+Digital
 
-Root finding (Newton–Raphson)
+</details>
+<details> <summary><strong>📐 3. Greeks & Hedging</strong></summary>
 
-Optimization techniques
+First-Order Greeks
 
-Variance reduction methods
+Delta
 
-8️⃣ Econometrics & Time Series
+Vega
 
-Linear & nonlinear regression
+Second-Order Greeks
 
-AR, MA, ARIMA models
+Gamma
 
-Cointegration & stationarity
+Vanna
 
-Kalman filters
+Volga
 
-Model diagnostics & validation
+Theta & Rho
 
-9️⃣ Machine Learning & Data Science (Modern Quant Edge)
+Dynamic Hedging
 
-Feature engineering for financial data
+Hedging Errors
 
-Supervised learning (regression, classification)
+Transaction Costs
 
-Unsupervised learning (clustering, PCA)
+</details>
+<details> <summary><strong>🏦 4. Fixed Income & Interest Rate Modeling</strong></summary>
 
-Tree-based models (XGBoost, Random Forests)
+Fixed Income Products
 
-Neural networks & deep learning
+Bonds
 
-Overfitting, bias-variance tradeoff
+Swaps
 
-Model interpretability
+Floating Rate Notes (FRNs)
 
-🔟 Portfolio Theory, Optimization & Hedging
+Yield Curves & Bootstrapping
 
-Modern Portfolio Theory (MPT)
+Duration & Convexity
 
-Efficient frontier
+Interest Rate Models
 
-Mean-variance optimization
+Vasicek
 
-Risk parity
+Cox–Ingersoll–Ross (CIR)
 
-Factor models
+Hull–White
 
-Dynamic hedging strategies
+Heath–Jarrow–Morton (HJM)
 
-Transaction costs & constraints
+Credit Spread Modeling
 
-1️⃣1️⃣ Market Microstructure (Often Asked in Trading Roles)
+</details>
+<details> <summary><strong>📉 5. Volatility & Risk Modeling</strong></summary>
 
-Order types & limit order books
+Implied vs Realized Volatility
 
-Bid-ask spread
+Volatility Smile & Surface
 
-Liquidity & price impact
+GARCH Family Models
 
-Market making
+Stress Testing
 
-High-frequency trading concepts
+Scenario Analysis
 
-1️⃣2️⃣ Credit Risk & Credit Derivatives
+Model Risk
 
-Credit default swaps (CDS)
+</details>
+<details> <summary><strong>🧮 6. Numerical Methods (Quant Dev Favorite)</strong></summary>
 
-Structural vs reduced-form models
+Monte Carlo Simulation
 
-Default probability & recovery rates
+Finite Difference Methods (PDEs)
 
-CVA, DVA, FVA, XVA
+Numerical Optimization
 
-Counterparty credit risk
+Root-Finding Algorithms
 
-1️⃣3️⃣ Algorithmic & Quantitative Trading
+Variance Reduction Techniques
 
-Strategy design & backtesting
+</details>
+<details> <summary><strong>📊 7. Econometrics & Time Series</strong></summary>
 
-Alpha generation
+Regression Models
 
-Execution algorithms
+AR / MA / ARIMA
 
-Slippage & latency
+Stationarity & Cointegration
 
-Risk management for trading systems
+Kalman Filters
 
-1️⃣4️⃣ Regulatory Framework & Risk Governance
+State-Space Models
 
-Basel III / IV concepts
+</details>
+<details> <summary><strong>🤖 8. Machine Learning & Data Science</strong></summary>
 
-Market risk & credit risk regulations
+Feature Engineering for Financial Data
 
-Model risk management
+Supervised Learning
 
-Stress testing frameworks
+Unsupervised Learning
 
-1️⃣5️⃣ Real-World Applications & Recent Trends (Interview Differentiator)
+Tree-Based Models
 
-Quant finance in practice
+Random Forest
 
-Systematic trading
+XGBoost
 
-Alternative data
+Neural Networks & Deep Learning
 
-AI in finance
+Overfitting & Bias–Variance Tradeoff
 
-ESG & climate risk modeling
+Model Validation
 
-Crypto & digital assets (optional but useful)
+Backtesting
 
-```mermaid
-flowchart TD
-    A[Probability & Statistics] --> B[Stochastic Calculus]
-    B --> C[Risk-Neutral Valuation]
-    C --> D[Option Pricing Models]
-    D --> E[Greeks & Hedging]
+</details>
+<details> <summary><strong>📈 9. Portfolio Theory & Optimization</strong></summary>
 
-    A --> F[Econometrics & Time Series]
-    F --> G[Volatility Modeling]
+Modern Portfolio Theory
 
-    D --> H[Exotic Options]
-    C --> I[Fixed Income & Interest Rates]
+Mean–Variance Optimization
 
-    I --> J[Interest Rate Models]
-    J --> K[Credit Derivatives]
+Efficient Frontier
 
-    A --> L[Numerical Methods]
-    L --> D
+Factor Models
 
-    F --> M[Machine Learning]
-    M --> N[Algo Trading]
+Risk Parity
 
-    E --> O[Portfolio Management]
-    O --> P[Risk Management & Regulation]
+Transaction Costs
 
-    N --> Q[Market Microstructure]
+Constraints
+
+</details>
+<details> <summary><strong>⚙️ 10. Algorithmic & Quant Trading</strong></summary>
+
+Alpha Generation
+
+Strategy Design
+
+Backtesting Frameworks
+
+Execution Algorithms
+
+Slippage
+
+Latency
+
+Market Impact
+
+</details>
+<details> <summary><strong>📘 11. Market Microstructure</strong></summary>
+
+Order Types
+
+Limit Order Books
+
+Bid–Ask Spread
+
+Liquidity
+
+Price Impact
+
+Market Making
+
+</details>
+<details> <summary><strong>💳 12. Credit Risk & Credit Derivatives</strong></summary>
+
+Structural Models
+
+Reduced-Form Models
+
+Credit Default Swaps (CDS)
+
+CVA / DVA / FVA / XVA
+
+Counterparty Credit Risk
+
+</details>
