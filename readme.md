@@ -267,3 +267,98 @@ vii. Discounted Asset Price Processes
 viii. Absence of Arbitrage Conditions  
 
 </details>
+
+<details>
+<summary><strong>14. Stochastic Processes (Foundational)</strong></summary>
+
+i. Random Processes & Filtrations  
+
+ii. Markov Processes  
+
+iii. Brownian Motion (Wiener Process)  
+
+iv. Poisson Processes  
+
+v. Jump Processes  
+
+vi. Mean-Reverting Processes  
+
+vii. Levy Processes  
+
+viii. Diffusion vs Jump-Diffusion Models  
+
+</details>
+<details>
+<summary><strong>15. Optimization & Convex Analysis</strong></summary>
+
+i. Convex vs Non-Convex Optimization  
+
+ii. Objective Functions & Constraints  
+
+iii. Lagrange Multipliers  
+
+iv. Karush–Kuhn–Tucker (KKT) Conditions  
+
+v. Gradient & Hessian Methods  
+
+vi. Numerical Optimization Techniques  
+
+vii. Stability & Convergence  
+
+</details>
+<details>
+<summary><strong>16. Programming & Systems for Quantitative Finance</strong></summary>
+
+i. Python for Quantitative Finance (NumPy, pandas, vectorization)  
+
+ii. C++ Fundamentals (memory, pointers, STL)  
+
+iii. Data Structures & Algorithms  
+
+iv. Performance Optimization  
+
+v. Multithreading & Concurrency  
+
+vi. Low-Latency Systems (Trading Context)  
+
+vii. Numerical Precision & Stability  
+
+</details>
+<details>
+<summary><strong>17. Backtesting, Model Validation & Bias Control</strong></summary>
+
+i. Backtesting Framework Design  
+
+ii. Look-Ahead Bias  
+
+iii. Survivorship Bias  
+
+iv. Data Leakage  
+
+v. Walk-Forward Analysis  
+
+vi. Cross-Validation for Time Series  
+
+vii. Overfitting Detection  
+
+viii. Performance Metrics (Sharpe, Drawdown)  
+
+</details>
+<details>
+<summary><strong>18. Regulation & Model Risk (Role-Dependent)</strong></summary>
+
+i. Basel III & Basel IV Overview  
+
+ii. Market Risk Regulations  
+
+iii. Credit Risk Regulations  
+
+iv. Model Risk Management (MRM)  
+
+v. Stress Testing Frameworks  
+
+vi. Regulatory Capital Concepts  
+
+</details>
+
+
