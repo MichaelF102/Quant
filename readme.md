@@ -5,7 +5,8 @@ This project serves as a research lab for developing, testing, and documenting q
 
 ⭐ Most Important Topics for Quant Interviews 
 
-<details> <summary><strong>🧠 1. Mathematical Foundations (Absolute Core)</strong></summary>
+<details> <summary><strong> 1. Mathematical Foundations (Absolute Core)</strong></summary>
+
 
 Probability Theory
 
@@ -26,7 +27,7 @@ Stochastic Differential Equations (SDEs)
 Girsanov Theorem
 
 </details>
-<details> <summary><strong>💰 2. Derivatives & Pricing Theory</strong></summary>
+<details> <summary><strong> 2. Derivatives & Pricing Theory</strong></summary>
 
 Derivative Instruments
 
@@ -67,7 +68,7 @@ Lookback
 Digital
 
 </details>
-<details> <summary><strong>📐 3. Greeks & Hedging</strong></summary>
+<details> <summary><strong> 3. Greeks & Hedging</strong></summary>
 
 First-Order Greeks
 
@@ -92,7 +93,7 @@ Hedging Errors
 Transaction Costs
 
 </details>
-<details> <summary><strong>🏦 4. Fixed Income & Interest Rate Modeling</strong></summary>
+<details> <summary><strong> 4. Fixed Income & Interest Rate Modeling</strong></summary>
 
 Fixed Income Products
 
@@ -119,7 +120,7 @@ Heath–Jarrow–Morton (HJM)
 Credit Spread Modeling
 
 </details>
-<details> <summary><strong>📉 5. Volatility & Risk Modeling</strong></summary>
+<details> <summary><strong> 5. Volatility & Risk Modeling</strong></summary>
 
 Implied vs Realized Volatility
 
@@ -134,7 +135,7 @@ Scenario Analysis
 Model Risk
 
 </details>
-<details> <summary><strong>🧮 6. Numerical Methods (Quant Dev Favorite)</strong></summary>
+<details> <summary><strong> 6. Numerical Methods (Quant Dev Favorite)</strong></summary>
 
 Monte Carlo Simulation
 
@@ -147,7 +148,7 @@ Root-Finding Algorithms
 Variance Reduction Techniques
 
 </details>
-<details> <summary><strong>📊 7. Econometrics & Time Series</strong></summary>
+<details> <summary><strong> 7. Econometrics & Time Series</strong></summary>
 
 Regression Models
 
@@ -160,7 +161,7 @@ Kalman Filters
 State-Space Models
 
 </details>
-<details> <summary><strong>🤖 8. Machine Learning & Data Science</strong></summary>
+<details> <summary><strong> 8. Machine Learning & Data Science</strong></summary>
 
 Feature Engineering for Financial Data
 
@@ -183,7 +184,7 @@ Model Validation
 Backtesting
 
 </details>
-<details> <summary><strong>📈 9. Portfolio Theory & Optimization</strong></summary>
+<details> <summary><strong> 9. Portfolio Theory & Optimization</strong></summary>
 
 Modern Portfolio Theory
 
@@ -200,7 +201,7 @@ Transaction Costs
 Constraints
 
 </details>
-<details> <summary><strong>⚙️ 10. Algorithmic & Quant Trading</strong></summary>
+<details> <summary><strong> 10. Algorithmic & Quant Trading</strong></summary>
 
 Alpha Generation
 
@@ -217,7 +218,7 @@ Latency
 Market Impact
 
 </details>
-<details> <summary><strong>📘 11. Market Microstructure</strong></summary>
+<details> <summary><strong> 11. Market Microstructure</strong></summary>
 
 Order Types
 
@@ -232,7 +233,7 @@ Price Impact
 Market Making
 
 </details>
-<details> <summary><strong>💳 12. Credit Risk & Credit Derivatives</strong></summary>
+<details> <summary><strong> 12. Credit Risk & Credit Derivatives</strong></summary>
 
 Structural Models
 
