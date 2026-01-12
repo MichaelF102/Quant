@@ -5,7 +5,7 @@ This project serves as a research lab for developing, testing, and documenting q
 
 ⭐ Most Important Topics for Quant Interviews 
 
-<details> <summary><strong> 1. Mathematical Foundations (Absolute Core)</strong></summary>
+<details> <summary><strong> 1. Mathematics and Statistics</strong></summary>
 
 
 i. Probability Theory
@@ -244,5 +244,26 @@ iii. Credit Default Swaps (CDS)
 iv. CVA / DVA / FVA / XVA
 
 v. Counterparty Credit Risk
+
+</details>
+
+<details>
+<summary><strong>13. Risk-Neutral Measure, Martingales & No-Arbitrage Pricing</strong></summary>
+
+i. Risk-Neutral Probability Measure  
+
+ii. Equivalent Martingale Measures  
+
+iii. Martingales in Finance  
+
+iv. Change of Numéraire  
+
+v. Fundamental Theorems of Asset Pricing  
+
+vi. Replication vs Expectation Pricing  
+
+vii. Discounted Asset Price Processes  
+
+viii. Absence of Arbitrage Conditions  
 
 </details>
