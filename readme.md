@@ -361,7 +361,7 @@ vi. Regulatory Capital Concepts
 
 </details>
 
-💻 Programming Languages,Libraries & Tools Used in Quantitative Finance
+## 💻 Programming Languages,Libraries & Tools Used in Quantitative Finance
 
 <details>
 <summary><strong>🐍 Python Libraries for Quantitative Finance</strong></summary>
