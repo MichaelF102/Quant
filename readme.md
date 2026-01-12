@@ -230,3 +230,29 @@ AI in finance
 ESG & climate risk modeling
 
 Crypto & digital assets (optional but useful)
+
+flowchart TD
+    A[Probability & Statistics] --> B[Stochastic Calculus]
+    B --> C[Risk-Neutral Valuation]
+    C --> D[Option Pricing Models]
+    D --> E[Greeks & Hedging]
+
+    A --> F[Econometrics & Time Series]
+    F --> G[Volatility Modeling]
+
+    D --> H[Exotic Options]
+    C --> I[Fixed Income & Interest Rates]
+
+    I --> J[Interest Rate Models]
+    J --> K[Credit Derivatives]
+
+    A --> L[Numerical Methods]
+    L --> D
+
+    F --> M[Machine Learning]
+    M --> N[Algo Trading]
+
+    E --> O[Portfolio Management]
+    O --> P[Risk Management & Regulation]
+
+    N --> Q[Market Microstructure]
