@@ -231,6 +231,7 @@ ESG & climate risk modeling
 
 Crypto & digital assets (optional but useful)
 
+```mermaid
 flowchart TD
     A[Probability & Statistics] --> B[Stochastic Calculus]
     B --> C[Risk-Neutral Valuation]
