@@ -162,7 +162,7 @@ Risk measurement, stress testing, and regulatory compliance.
 - Regulatory concepts  
 
 </details>
-## 🧠 Role Comparison Summary
+🧠 Role Comparison Summary
 
 | Role | Main Strength | Coding Level | Math Level | Trading Exposure |
 |------|---------------|--------------|------------|------------------|
